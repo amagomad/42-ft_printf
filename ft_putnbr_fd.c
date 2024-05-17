@@ -6,7 +6,7 @@
 /*   By: amagomad <amagomad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 21:20:00 by amagomad          #+#    #+#             */
-/*   Updated: 2024/05/16 22:56:04 by amagomad         ###   ########.fr       */
+/*   Updated: 2024/05/17 16:06:28 by amagomad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_putnbr_fd(int n, int fd)
 		{
 			count += ft_putnbr_fd(n / 10, fd);
 		}
-		count += ft_putchar_fd((char)(n % 10 + '0'), fd);
+		count += ft_putchar_fd((n % 10 + '0'), fd);
 	}
 	return (count);
 }

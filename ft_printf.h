@@ -6,14 +6,16 @@
 /*   By: amagomad <amagomad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/16 15:00:10 by amagomad          #+#    #+#             */
-/*   Updated: 2024/05/16 22:59:37 by amagomad         ###   ########.fr       */
+/*   Updated: 2024/05/17 17:22:22 by amagomad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <fcntl.h>
 # include <stdarg.h>
+# include <stdio.h>
 # include <unistd.h>
 
 int	ft_printf(const char *format, ...);
