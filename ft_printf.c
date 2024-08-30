@@ -57,11 +57,11 @@ static int	print_format(va_list args, const char *format)
 
 int	ft_printf(const char *format, ...)
 {
-	if (format == NULL)
-		return (-1);
-	va_list	args;
+	va_list		args;
 	int		count;
 
+	if (format == NULL)
+		return (-1);
 	va_start(args, format);
 	count = print_format(args, format);
 	va_end(args);
